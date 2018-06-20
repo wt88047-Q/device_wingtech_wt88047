@@ -20,6 +20,8 @@ DEVICE_PATH := device/wingtech/wt88047
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 ifneq ($(FORCE_32_BIT),true)
 TARGET_ARCH := arm64
