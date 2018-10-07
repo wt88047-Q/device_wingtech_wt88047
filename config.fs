@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [AID_VENDOR_QCOM_DIAG]
 value:2950
 
