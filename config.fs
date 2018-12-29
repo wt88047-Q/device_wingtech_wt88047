@@ -10,8 +10,8 @@ value:2952
 
 [vendor/bin/pm-service]
 mode: 0755
-user: AID_SYSTEM
-group: AID_SYSTEM
+user: AID_RADIO
+group: AID_RADIO
 caps: NET_BIND_SERVICE
 
 [system/vendor/bin/pm-service]
