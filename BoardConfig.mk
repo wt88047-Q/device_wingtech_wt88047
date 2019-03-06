@@ -200,7 +200,7 @@ PRODUCT_VENDOR_MOVE_ENABLED      := true
 TARGET_USES_QCOM_WCNSS_QMI := true
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
-WPA_SUPPLICANT_VERSION := VER_0_8_X
+WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 
 # Shipping API level (for CTS backward compatibility)
 PRODUCT_SHIPPING_API_LEVEL := 19
@@ -213,3 +213,4 @@ WITH_DEXPREOPT := true
 
 # Exclude serif fonts for saving system.img size.
 EXCLUDE_SERIF_FONTS := true
+
