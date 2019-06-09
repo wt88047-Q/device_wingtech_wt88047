@@ -1,3 +1,4 @@
+
 # Lights
 /sys/devices/soc\.0/gpio-leds\.[a-z0-9]+/leds(/.*)?                            u:object_r:sysfs_leds:s0
 /sys/devices/soc\.0/qcom,camera-led-flash\.[a-z0-9]+/leds(/.*)?                u:object_r:sysfs_leds:s0
@@ -12,3 +13,10 @@
 
 # HALs
 /system/vendor/bin/hw/android\.hardware\.usb@1\.0-service\.cyanogen_8916       u:object_r:hal_usb_default_exec:s0
+
+# HAL
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.wt88047      u:object_r:hal_lineage_touch_default_exec:s0
+
+# Touchpanel
+/sys/bus/i2c/drivers/ft5x06_ts/5-0038/keypad_mode                                u:object_r:proc_touchpanel:s0
+
