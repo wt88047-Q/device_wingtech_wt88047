@@ -126,10 +126,15 @@ on post-fs-data
 
     mkdir /data/audio/ 0770 media audio
 
+
     setprop vold.post_fs_data_done 1
 
     # Create a folder for SRS to be able to create a usercfg file
     mkdir /data/data/media 0770 media media
+    
+    # Enable power-on alarm
+    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
+
 
     mkdir /data/diag_logs 0777 system system
 
