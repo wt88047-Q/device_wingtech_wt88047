@@ -185,8 +185,7 @@ USE_OPENGL_RENDERER := true
 # SELinux
 #BOARD_SEPOLICY_DIRS += \
    #$(DEVICE_PATH)/sepolicy
-
-include device/qcom/sepolicy-legacy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += device/wingtech/wt88047/sepolicy_tmp
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
