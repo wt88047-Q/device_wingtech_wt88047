@@ -118,6 +118,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
 
+# Shipping API level (for CTS backward compatibility)
+PRODUCT_SHIPPING_API_LEVEL := 19
 
 # Display
 PRODUCT_PACKAGES += \
