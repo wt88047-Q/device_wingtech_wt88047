@@ -399,4 +399,3 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=android-lenovo \
     ro.adb.secure=0 \
     net.tethering.noprovisioning=true
->>>>>>> 1ced4ff7... A6020: audio: Migrate to XML audio policy configuration
