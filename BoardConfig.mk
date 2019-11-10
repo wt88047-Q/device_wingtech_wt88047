@@ -107,12 +107,8 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Dexpreopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT ?= true
-  endif
-endif
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
+WITH_DEXPREOPT := false
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -228,9 +224,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
 include vendor/wingtech/wt88047/BoardConfigVendor.mk
-
-#DEXPREOPT
-WITH_DEXPREOPT := true
 
 # Exclude serif fonts for saving system.img size.
 EXCLUDE_SERIF_FONTS := true
